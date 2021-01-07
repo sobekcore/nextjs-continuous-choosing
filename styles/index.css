@@ -1,13 +1,275 @@
-#title
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body
 {
-  font-size: 60px;
-  font-weight: 900;
-  text-align: center;
-  margin-top: 40vh;
   padding: 0;
+  margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-anchor: none;
+  background:
+    url("/tea-brewing.png") no-repeat fixed bottom left / cover;
+  background-color: #98be4b;
 }
 
-#boilerplate
+body::-webkit-scrollbar
 {
-  font-size: 24px;
+  width: 14px;
+}
+
+body::-webkit-scrollbar-track
+{
+  background: #9dca41;
+}
+
+body::-webkit-scrollbar-thumb
+{
+  background: rgb(61, 83, 22);
+}
+
+.page
+{
+  height: 100vh;
+}
+
+#title
+{
+  background-color: rgb(108, 134, 62);
+  height: 55px;
+  width: 960px;
+  max-width: 90vw;
+  margin-left: -29px;
+  border-radius: 0 0 10px 0;
+}
+
+#title h1
+{
+  font: 64px "Poppins", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  width: 90vw;
+  margin: -13px 0 0 39px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#title h4
+{
+  display: none;
+}
+
+#social-icons
+{
+  display: flex;
+  justify-content: flex-end;
+  margin: -26px 15px 0 0;
+}
+
+#social-icons .icon
+{
+  width: 60px;
+  margin: 0 10px -35px 10px;
+  filter: invert(15%) brightness(2.3) sepia(0.8) hue-rotate(-310deg) saturate(2);
+}
+
+#social-icons ul
+{
+  list-style: none;
+  background-color: rgba(108, 134, 62, 0.4);
+  border-radius: 0 0 0 13px;
+  padding: 10px 15px 44px 18px;
+  margin: -16px;
+}
+
+#social-icons ul li
+{
+  display: inline-flex;
+}
+
+#social-icons ul li a,
+#social-icons ul li a::before,
+#social-icons ul li a::after
+{
+  transition: all .35s;
+}
+
+#social-icons ul li a:hover
+{
+  filter: brightness(1.6) drop-shadow(0 0 0.4rem black);
+}
+
+
+.buttons
+{
+  width: 100vw;
+  position: relative;
+  text-align: center;
+  top: 40vh;
+  align-self: center;
+  margin: auto;
+}
+
+#black-tea { background: linear-gradient(to bottom, rgb(110, 141, 57) 92%, rgb(33, 34, 34) 0) top/100% no-repeat; }
+#green-tea { background: linear-gradient(to bottom, rgb(110, 141, 57) 92%, rgb(42, 197, 42) 0) top/100% no-repeat; }
+#oolong-tea { background: linear-gradient(to bottom, rgb(110, 141, 57) 92%, rgb(53, 207, 192) 0) top/100% no-repeat; }
+#white-tea { background: linear-gradient(to bottom, rgb(110, 141, 57) 92%, rgb(221, 236, 241) 0) top/100% no-repeat; }
+#pu-erh-tea { background: linear-gradient(to bottom, rgb(110, 141, 57) 92%, rgb(182, 57, 57) 0) top/100% no-repeat; }
+#yellow-tea { background: linear-gradient(to bottom, rgb(110, 141, 57) 92%, rgb(224, 224, 42) 0) top/100% no-repeat; }
+
+.buttons button
+{
+  background-color: rgb(110, 141, 57);
+  font: 30px "Poppins", sans-serif;
+  font-weight: 700;
+  padding: 20px 40px;
+  margin: 9px 6px;
+  border-radius: 6px;
+  border: 2px solid black;
+  cursor: pointer;
+  box-shadow: 4px 5px rgb(61, 77, 36);
+}
+
+.buttons button:hover
+{
+  padding: 20px 52px 27px 52px;
+  border-width: 2px 4px 5px 3px;
+}
+
+.buttons button,
+.buttons button:before,
+.buttons button:after
+{
+  transition: padding .2s, border .15s;
+}
+
+.buttons button:focus
+{
+  outline: 0;
+}
+
+.buttons img
+{
+  margin-top: -310px;
+  max-width: 100%;
+}
+
+#tea-info
+{
+  font: 28px "Poppins", sans-serif;
+  font-weight: 700;
+  margin: -70px 0 38px 0;
+}
+
+#footer
+{
+  position: sticky;
+  background-color: rgb(108, 134, 62);
+  height: 40px;
+  width: 320px;
+  max-width: 100vw;
+  border-radius: 10px 0 0 0;
+  top: 100vh;
+  left: 100vw;
+  margin-right: -35px;
+  margin-bottom: -30px;
+}
+
+#footer h3
+{
+  position: absolute;
+  width: 320px;
+  font: 24px "Poppins", sans-serif;
+  font-weight: 700;
+  max-width: 100vw;
+  margin-top: -18px;
+  margin-left: -10px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+@media (max-width: 1049px)
+{
+  #title
+  {
+    height: 41px;
+    width: 737px;
+    max-width: 93vw;
+    margin-left: -29px;
+    border-radius: 0 0 10px 0;
+  }
+
+  #title h1
+  {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 799px)
+{
+  #title
+  {
+    width: 100vw;
+    max-width: 100vw;
+    margin: 0;
+    border-radius: 0 0 10px 10px;
+    height: 100px;
+  }
+
+  #title h1
+  {
+    font-size: 40px;
+    text-align: center;
+    margin: auto;
+    padding-top: 18px;
+    overflow: scroll;
+  }
+
+  #title h1::-webkit-scrollbar
+  {
+    height: 7px;
+    width: 100%;
+  }
+
+  #title h1::-webkit-scrollbar-track
+  {
+    background: rgb(108, 134, 62);
+  }
+
+  #title h1::-webkit-scrollbar-thumb
+  {
+    background: rgb(61, 83, 22);
+    border-radius: 14px;
+  }
+
+  .buttons
+  {
+    top: 20px;
+    margin-bottom: 70px;
+  }
+
+  .buttons img
+  {
+    margin-top: -35px;
+    margin-bottom: 40px;
+    max-width: 60vw;
+  }
+
+  #footer
+  {
+    top: calc(100vh - 23px);
+  }
+}
+
+@media (max-width: 651px)
+{
+  #title h4
+  {
+    display: inherit;
+    font: 14px "Poppins", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin: auto auto -25px auto;
+    padding-top: 8px;
+  }
 }
