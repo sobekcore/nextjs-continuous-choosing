@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-/* Variables set up */
+/* Variables setup */
 var stage = 0;
 var temperature = 0;
 var fahrenheit = 0;
@@ -217,10 +217,12 @@ export default function RenderButtons()
 
       return(
         <div className="buttons">
-          <img src={img}/>
-          <h3 id="tea-info">Water temperature: approx. {temperature}°C / {fahrenheit}°F <br />
-          Tea brewing time: approx. {minutes}m { seconds >= 1 && <>{seconds}s</> } <br /> </h3>
-          <button onClick={resetForm}>Choose tea again</button>
+          <div id="choose-again">
+            <img src={img}/>
+            <h3 id="tea-info">Water temperature: approx. {temperature}°C / {fahrenheit}°F <br />
+            Tea brewing time: approx. {minutes}m { seconds >= 1 && <>{seconds}s</> } <br /> </h3>
+            <button onClick={resetForm}>Choose tea again</button>
+          </div>
         </div>
       );
   }
