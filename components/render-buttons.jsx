@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Items, ItemNames } from "./item-lists";
 
-/* Variables setup */
+// Variables setup
 var stage = 0;
 var temperature = 0;
 var fahrenheit = 0;
@@ -9,6 +9,14 @@ var time = 0;
 var minutes = 0;
 var seconds = 0;
 var img = "";
+
+// Loading images before
+var img1 = "/tea-cups/tea-cup-black.png";
+var img2 = "/tea-cups/tea-cup-green.png";
+var img3 = "/tea-cups/tea-cup-oolong.png";
+var img4 = "/tea-cups/tea-cup-white.png";
+var img5 = "/tea-cups/tea-cup-pu-erh.png";
+var img6 = "/tea-cups/tea-cup-yellow.png";
 
 export default function RenderButtons()
 {
@@ -138,7 +146,7 @@ export default function RenderButtons()
         // First choice
         temperature += 90;
         time += 100;
-        img = "/tea-cups/tea-cup-black.png";
+        img = img1;
 
         if(type == Items[6]) { temperature -= 5; time -= 20; }
         else if(type == Items[7]) { time += 20; }
@@ -151,7 +159,7 @@ export default function RenderButtons()
         // Second choice
         temperature += 75;
         time += 80;
-        img = "/tea-cups/tea-cup-green.png";
+        img = img2;
 
         if(type == Items[10]) { temperature += 5; }
         else if(type == Items[11]) { temperature -= 15; time += 10; }
@@ -167,7 +175,7 @@ export default function RenderButtons()
         // Third choice
         temperature += 85;
         time += 130;
-        img = "/tea-cups/tea-cup-oolong.png";
+        img = img3;
 
         if(type == Items[14]) { temperature -= 5; }
 
@@ -179,7 +187,7 @@ export default function RenderButtons()
         // Fourth choice
         temperature += 80;
         time += 180;
-        img = "/tea-cups/tea-cup-white.png";
+        img = img4;
 
         if(type == Items[18]) { temperature += 5; }
         else if(type == Items[19]) { temperature -= 5; }
@@ -192,7 +200,7 @@ export default function RenderButtons()
         // Fifth choice
         temperature += 85;
         time += 180;
-        img = "/tea-cups/tea-cup-pu-erh.png";
+        img = img5;
 
         if(type == Items[21]) { temperature += 10; time += 120; }
 
@@ -204,7 +212,7 @@ export default function RenderButtons()
         // Sixth choice
         temperature += 80;
         time += 80;
-        img = "/tea-cups/tea-cup-yellow.png";
+        img = img6;
 
         if(type == Items[22]) { temperature += 5; }
         else if(type == Items[23]) { time += 40; }
@@ -219,9 +227,7 @@ export default function RenderButtons()
       seconds = time % 60;
 
       if(teaAmount == Items[24] || teaAmount == Items[25])
-      {
-        minutes = "Whisk with chasen for 1";
-      }
+      { minutes = "Whisk with chasen for 1"; }
 
       return(
         <div className="buttons">

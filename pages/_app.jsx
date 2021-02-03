@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps })
   return(
     <>
       <Head>
-        <title>NextJS Continuous Choosing</title>
+        <title>Next.js Continuous Choosing</title>
         <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
         <meta name="description" content="Simple app to ask you a few questsions about your tea and telling you how to
         brew it. Questions and anwsers depends on your choices."/>

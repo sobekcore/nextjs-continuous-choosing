@@ -1,0 +1,21 @@
+/* Tea Information Styling */
+#choose-again
+{
+  margin-top: 150px;
+  margin-bottom: -115px;
+  width: 100%;
+  height: 620px;
+}
+
+.buttons img
+{
+  box-sizing: border-box;
+  padding-top: 40px;
+  max-width: 100%;
+}
+
+#tea-info
+{
+  font: 28px "Poppins", sans-serif;
+  font-weight: 700;
+}

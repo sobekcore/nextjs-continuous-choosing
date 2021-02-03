@@ -1,6 +1,15 @@
+/* Import Duplicate CSS's */
+@import "./title.css";
+@import "./social-icons.css";
+@import "./buttons.css";
+@import "./tea-info.css";
+@import "./footer.css";
+
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-/* Website */
+/* This file serves as a container for all the settings and CSS's in this project */
+
+/* Website Settings */
 body
 {
   padding: 0;
@@ -18,227 +27,26 @@ body
   --scroll-green-color: #3D5316;
 }
 
-body::-webkit-scrollbar
-{
-  width: 14px;
-}
-
-body::-webkit-scrollbar-track
-{
-  background: var(--light-green-color);
-}
-
-body::-webkit-scrollbar-thumb
-{
-  background: var(--scroll-green-color);
-}
-
 ::selection
 {
   background-color: var(--dark-green-color);
   color: #cfe79d;
 }
 
-.page
-{
-  height: 100vh;
-}
+.page { height: 100vh;}
 
 
-/* Title */
-#title
-{
-  background-color: var(--dark-green-color);
-  height: 55px;
-  width: 960px;
-  max-width: 90vw;
-  margin-left: -29px;
-  border-radius: 0 0 10px 0;
-}
-
-#title h1
-{
-  font: 64px "Poppins", sans-serif;
-  font-weight: 700;
-  letter-spacing: 1px;
-  width: 90vw;
-  margin: -13px 0 0 39px;
-  white-space: nowrap;
-}
-
-#title h4
-{
-  display: none;
-}
-
-
-/* Social icons */
-#social-icons
-{
-  display: flex;
-  justify-content: flex-end;
-  margin: -26px 15px 0 0;
-}
-
-#social-icons .icon
-{
-  box-sizing: border-box;
-  width: 50px;
-  margin: 0 10px -35px 10px;
-  filter: invert(15%) brightness(2.3) sepia(0.8) hue-rotate(-310deg) saturate(2);
-  border: 2px solid black;
-  padding: 4px;
-  border-radius: 8px;
-}
-
-#social-icons ul
-{
-  list-style: none;
-  background-color: rgba(108, 134, 62, 0.4);
-  border-radius: 0 0 0 13px;
-  padding: 10px 13px 16px 16px;
-  margin: -16px;
-}
-
-#social-icons ul li
-{
-  display: inline-flex;
-}
-
-#social-icons ul li a,
-#social-icons ul li a::before,
-#social-icons ul li a::after
-{
-  height: 50px;
-  transition: all .3s;
-}
-
-#social-icons ul li a:hover
-{
-  filter: brightness(1.6) drop-shadow(0 0 0.18rem black);
-}
-
-
-/* Buttons */
-.buttons
-{
-  position: relative;
-  width: 100vw;
-  text-align: center;
-  top: 45%;
-  transform: translate(0%, -75%);
-}
-
-#black-tea { background: linear-gradient(to bottom, var(--medium-green-color) 92%, rgb(33, 34, 34) 0) top/100% no-repeat; }
-#green-tea { background: linear-gradient(to bottom, var(--medium-green-color) 92%, rgb(42, 197, 42) 0) top/100% no-repeat; }
-#oolong-tea { background: linear-gradient(to bottom, var(--medium-green-color) 92%, rgb(53, 207, 192) 0) top/100% no-repeat; }
-#white-tea { background: linear-gradient(to bottom, var(--medium-green-color) 92%, rgb(221, 236, 241) 0) top/100% no-repeat; }
-#pu-erh-tea { background: linear-gradient(to bottom, var(--medium-green-color) 92%, rgb(182, 57, 57) 0) top/100% no-repeat; }
-#yellow-tea { background: linear-gradient(to bottom, var(--medium-green-color) 92%, rgb(224, 224, 42) 0) top/100% no-repeat; }
-
-.buttons button
-{
-  background-color: var(--medium-green-color);
-  font: 30px "Poppins", sans-serif;
-  font-weight: 700;
-  padding: 20px 40px;
-  margin: 9px 6px;
-  border-radius: 6px;
-  border: 2px solid black;
-  box-shadow: 4px 5px rgb(61, 77, 36);
-  cursor: pointer;
-}
-
-.buttons button:hover
-{
-  box-shadow: 3px 4px black, -3px -4px black;
-  padding: 20px 45px 20px 45px;
-  border-width: 2px 4px;
-}
-
-.buttons button,
-.buttons button:before,
-.buttons button:after
-{
-  transition: padding .2s, box-shadow .15s, border .15s;
-}
-
-.buttons button:focus
-{
-  outline: 0;
-}
-
-
-/* Tea information */
-#choose-again
-{
-  margin-top: 150px;
-  margin-bottom: -115px;
-  width: 100%;
-  height: 620px;
-}
-
-.buttons img
-{
-  box-sizing: border-box;
-  padding-top: 40px;
-  max-width: 100%;
-}
-
-#tea-info
-{
-  font: 28px "Poppins", sans-serif;
-  font-weight: 700;
-}
-
-
-/* Footer */
-#footer
-{
-  position: sticky;
-  background-color: var(--dark-green-color);
-  height: 40px;
-  width: 320px;
-  max-width: 100vw;
-  border-radius: 10px 0 0 0;
-  top: 100vh;
-  left: 100vw;
-  margin-right: -35px;
-  margin-bottom: -30px;
-}
-
-#footer h3
-{
-  position: absolute;
-  width: 320px;
-  font: 24px "Poppins", sans-serif;
-  font-weight: 700;
-  max-width: 100vw;
-  margin-top: -18px;
-  margin-left: -10px;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-
-/* Media dependencies */
+/* Media Queries */
 @media (max-width: 1149px)
 {
   #title
-  {
-    height: 41px;
-    width: 737px;
-  }
+  { height: 41px; width: 733px; }
 
   #title h1
-  {
-    font-size: 48px;
-  }
+  { font-size: 48px; }
 
   #social-icons
-  {
-    margin-top: -12px;
-  }
+  { margin-top: -12px; }
 }
 
 @media (max-width: 919px)
@@ -268,9 +76,7 @@ body::-webkit-scrollbar-thumb
   }
 
   #title h1::-webkit-scrollbar-track
-  {
-    background: var(--dark-green-color);
-  }
+  { background: var(--dark-green-color); }
 
   #title h1::-webkit-scrollbar-thumb
   {
@@ -279,15 +85,10 @@ body::-webkit-scrollbar-thumb
   }
 
   #social-icons
-  {
-    margin-top: 10px;
-    margin-bottom: 15px;
-  }
+  { margin-top: 10px; margin-bottom: 15px; }
 
   #social-icons .icon
-  {
-    margin-top: 5px;
-  }
+  { margin-top: 5px; }
 
   .buttons
   {
@@ -297,9 +98,7 @@ body::-webkit-scrollbar-thumb
   }
 
   #choose-again
-  {
-    margin-bottom: -100px;
-  }
+  { margin-bottom: -100px; }
 
   .buttons img
   {
@@ -314,7 +113,7 @@ body::-webkit-scrollbar-thumb
   }
 }
 
-@media (max-width: 651px)
+@media (max-width: 665px)
 {
   #title h4
   {

@@ -1,0 +1,39 @@
+/* Social Icons Styling */
+#social-icons
+{
+  display: flex;
+  justify-content: flex-end;
+  margin: -26px 15px 0 0;
+}
+
+#social-icons .icon
+{
+  box-sizing: border-box;
+  width: 50px;
+  margin: 0 10px -35px 10px;
+  border: 2px solid var(--scroll-green-color);
+  padding: 4px;
+  border-radius: 8px;
+}
+
+#social-icons ul
+{
+  list-style: none;
+  background-color: rgba(108, 134, 62, 0.4);
+  border-radius: 0 0 0 13px;
+  padding: 10px 13px 16px 16px;
+  margin: -16px;
+}
+
+#social-icons ul li
+{ display: inline-flex;}
+
+#social-icons ul li a
+,#social-icons ul li
+{
+  height: 50px;
+  transition: all .25s;
+}
+
+#social-icons ul li a:hover
+{ filter: brightness(1.4); transform: scale(1.1); }

@@ -1,0 +1,21 @@
+/* Title Styling */
+#title
+{
+  background-color: var(--dark-green-color);
+  height: 55px; width: 955px;
+  max-width: 90vw;
+  margin-left: -29px;
+  border-radius: 0 0 10px 0;
+}
+
+#title h1
+{
+  font: 64px "Poppins", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  width: 90vw;
+  margin: -13px 0 0 39px;
+  white-space: nowrap;
+}
+
+#title h4 { display: none; }
