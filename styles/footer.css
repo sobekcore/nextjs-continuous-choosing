@@ -1,5 +1,5 @@
 /* Footer Styling */
-#footer
+footer
 {
   position: sticky;
   background-color: var(--dark-green-color);
@@ -13,7 +13,7 @@
   margin-bottom: -30px;
 }
 
-#footer h3
+footer h3
 {
   position: absolute;
   width: 320px;

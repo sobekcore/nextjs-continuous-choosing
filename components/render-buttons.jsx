@@ -40,81 +40,81 @@ export default function RenderButtons()
   {
     case 0 :
       return(
-        <div className="buttons">
+        <article className="buttons">
           <button id="black-tea" onClick={() => setColor(Items[0])}>{ItemNames[0]}</button>
           <button id="green-tea" onClick={() => setColor(Items[1])}>{ItemNames[1]}</button>
           <button id="oolong-tea" onClick={() => setColor(Items[2])}>{ItemNames[2]}</button>
           <button id="white-tea" onClick={() => setColor(Items[3])}>{ItemNames[3]}</button>
           <button id="pu-erh-tea" onClick={() => setColor(Items[4])}>{ItemNames[4]}</button>
           <button id="yellow-tea" onClick={() => setColor(Items[5])}>{ItemNames[5]}</button>
-        </div>
+        </article>
       );
 
     case 1 :
       if(color == "black")
       {
         return(
-          <div className="buttons">
+          <article className="buttons">
             <button onClick={() => setType(Items[6])}>{ItemNames[6]}</button>
             <button onClick={() => setType(Items[7])}>{ItemNames[7]}</button>
             <button onClick={() => setType(Items[8])}>{ItemNames[8]}</button>
             <button onClick={() => setType("idk")}>I don't know <span role="img" aria-label=":/">😕</span></button>
-          </div>
+          </article>
         );
       }
       else if(color == "green")
       {
         return(
-          <div className="buttons">
+          <article className="buttons">
             <button onClick={() => setType(Items[9])}>{ItemNames[9]}</button>
             <button onClick={() => setType(Items[10])}>{ItemNames[10]}</button>
             <button onClick={() => setType(Items[11])}>{ItemNames[11]}</button>
             <button onClick={() => setType(Items[12])}>{ItemNames[12]}</button>
             <button onClick={() => setType(Items[13])}>{ItemNames[13]}</button>
             <button onClick={() => setType("idk")}>I don't know <span role="img" aria-label=":/">😕</span></button>
-          </div>
+          </article>
         );
       }
       else if(color == "oolong")
       {
         return(
-          <div className="buttons">
+          <article className="buttons">
             <button onClick={() => setType(Items[14])}>{ItemNames[14]}</button>
             <button onClick={() => setType(Items[15])}>{ItemNames[15]}</button>
             <button onClick={() => setType(Items[16])}>{ItemNames[16]}</button>
             <button onClick={() => setType("idk")}>I don't know <span role="img" aria-label=":/">😕</span></button>
-          </div>
+          </article>
         );
       }
       else if(color == "white")
       {
         return(
-          <div className="buttons">
+          <article className="buttons">
             <button onClick={() => setType(Items[17])}>{ItemNames[17]}</button>
             <button onClick={() => setType(Items[18])}>{ItemNames[18]}</button>
             <button onClick={() => setType(Items[19])}>{ItemNames[19]}</button>
             <button onClick={() => setType("idk")}>I don't know <span role="img" aria-label=":/">😕</span></button>
-          </div>
+          </article>
         );
       }
       else if(color == "pu-erh")
       {
         return(
-          <div className="buttons">
+          <article className="buttons">
             <button onClick={() => setType(Items[20])}>{ItemNames[20]}</button>
             <button onClick={() => setType(Items[21])}>{ItemNames[21]}</button>
             <button onClick={() => setType("idk")}>I don't know <span role="img" aria-label=":/">😕</span></button>
-          </div>
+          </article>
         );
       }
       else if(color == "yellow")
       {
         return(
-          <div className="buttons">
+          <article className="buttons">
             <button onClick={() => setType(Items[22])}>{ItemNames[22]}</button>
             <button onClick={() => setType(Items[23])}>{ItemNames[23]}</button>
             <button onClick={() => setType("idk")}>I don't know <span role="img" aria-label=":/">😕</span></button>
-          </div>
+          </article>
         );
       }
 
@@ -122,21 +122,21 @@ export default function RenderButtons()
       if(type == "matcha")
       {
         return(
-          <div className="buttons">
+          <article className="buttons">
             <button onClick={() => setTeaAmount(Items[24])}>{ItemNames[24]}</button>
             <button onClick={() => setTeaAmount(Items[25])}>{ItemNames[25]}</button>
             <button onClick={() => setTeaAmount("idk")}>I don't know <span role="img" aria-label=":/">😕</span></button>
-          </div>
+          </article>
         );
       }
       else
       {
         return(
-          <div className="buttons">
+          <article className="buttons">
             <button onClick={() => setTeaAmount(Items[26])}>{ItemNames[26]}</button>
             <button onClick={() => setTeaAmount(Items[27])}>{ItemNames[27]}</button>
             <button onClick={() => setTeaAmount(Items[28])}>{ItemNames[28]}</button>
-          </div>
+          </article>
         );
       }
 
@@ -230,14 +230,14 @@ export default function RenderButtons()
       { minutes = "Whisk with chasen for 1"; }
 
       return(
-        <div className="buttons">
+        <article className="buttons">
           <div id="choose-again">
             <img src={img}/>
             <h3 id="tea-info">Water temperature: approx. {temperature}°C / {fahrenheit}°F <br />
             Tea brewing time: approx. {minutes}m { seconds >= 1 && <>{seconds}s</> } <br /> </h3>
             <button onClick={resetForm}>Choose tea again</button>
           </div>
-        </div>
+        </article>
       );
   }
 }
