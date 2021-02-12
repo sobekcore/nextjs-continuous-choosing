@@ -25,15 +25,15 @@
   border-radius: 6px;
   border: 2px solid black;
   box-shadow: 4px 5px rgb(61, 77, 36);
-  transition: .3s padding, filter, .2s transform;
+  transition: .3s padding, .15s filter, .2s transform;
   cursor: pointer;
 }
 
 .buttons button:hover
 {
-  padding: 20px 50px;
+  padding: 20px 56px;
   filter: brightness(1.1);
-  transform: scaleY(1.08);
+  transform: scaleY(1.07);
 }
 
 .buttons button:focus
